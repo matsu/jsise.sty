@@ -14,9 +14,15 @@
 
 \renewcommand{\baselinestretch}{1.2}
 
+% 1pt = 1/72 inch in MS-Word, in contrast, 1pt = 1/72.27 inch in TeX
+\newcommand{\msnormalsize}{\fontsize{10.038pt}{15.056pt}\selectfont}
+\newcommand{\mssmall}{\fontsize{9.034pt}{13.551pt}\selectfont}
+\newcommand{\mslarge}{\fontsize{12.045pt}{18.067pt}\selectfont}
+\newcommand{\msLARGE}{\fontsize{18.067pt}{27.101pt}\selectfont}
+
 \renewcommand{\figurename}{図}
 \renewcommand{\tablename}{表}
-\renewcommand{\refname}{参　考　文　献\centering\fontsize{10.038pt}{15.056pt}\selectfont}
+\renewcommand{\refname}{参　考　文　献\centering\msnormalsize}
 
 \pagestyle{empty}
 \thispagestyle{empty}
@@ -24,13 +30,13 @@
 \def\@maketitle{\newpage
 \begin{center}
 %\centering
-	{\fontsize{18.067pt}{27.101pt}\selectfont\bf\@title\par}%
+	{\msLARGE\bf\@title\par}%
 	\vskip 1.5em%
-	{\fontsize{12.045pt}{18.067pt}\selectfont\bf\begin{tabular}[t]{c}\@author\end{tabular}\par}%
+	{\mslarge\bf\begin{tabular}[t]{c}\@author\end{tabular}\par}%
 	\vskip 1.5em%
-	{\fontsize{18.067pt}{27.101pt}\selectfont\bf\@etitle\par}%
+	{\msLARGE\bf\@etitle\par}%
 	\vskip 1.5em%
-	{\fontsize{12.045pt}{18.067pt}\selectfont\bf\begin{tabular}[t]{c}\@eauthor\end{tabular}\par}%
+	{\mslarge\bf\begin{tabular}[t]{c}\@eauthor\end{tabular}\par}%
 	\vskip 1.5em%
 	\@abstract\par%
 	\vskip 1.5em%
@@ -48,9 +54,9 @@
 \newcommand{\Afil}[1]{#1}
 
 \usepackage{titlesec}
-\titleformat*{\section}{\fontsize{12.045pt}{18.067pt}\selectfont\bfseries}
-\titleformat*{\subsection}{\fontsize{10.038pt}{15.056pt}\selectfont\bfseries}
-\titleformat*{\subsubsection}{\fontsize{10.038pt}{15.056pt}\selectfont\bfseries}
+\titleformat*{\section}{\mslarge\bfseries}
+\titleformat*{\subsection}{\msnormalsize\bfseries}
+\titleformat*{\subsubsection}{\msnormalsize\bfseries}
 \titlespacing*{\section}{0pt}{3.2ex plus 1ex minus .2ex}{0.8ex plus .2ex}
 \titlespacing*{\subsection}{0pt}{2ex plus 1ex minus .2ex}{0.5ex plus .2ex}
 \titlespacing*{\subsubsection}{0pt}{2ex plus 1ex minus .2ex}{0.5ex plus .2ex}
