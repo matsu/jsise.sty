@@ -60,3 +60,8 @@
 
 \twocolumn
 \setlength{\columnsep}{28pt}
+
+\bibliographystyle{jplain}
+\makeatletter
+\def\@biblabel#1{(#1)}
+\renewcommand{\@cite}[1]{\textsuperscript{(#1)}}
